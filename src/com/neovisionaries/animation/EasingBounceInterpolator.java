@@ -39,24 +39,52 @@ public class EasingBounceInterpolator extends EasingInterpolator
     }
 
 
+    /**
+     * Get the count of bounces. The default value is 3.
+     *
+     * @return
+     *         The cound of bounces.
+     */
     public int getBounceCount()
     {
         return bounceCount;
     }
 
 
+    /**
+     * Set the count of bounces.
+     *
+     * @param bounceCount
+     *
+     * @throws IllegalArgumentException
+     *         The given value is less than 1.
+     */
     public void setBounceCount(int bounceCount)
     {
         this.bounceCount = checkBounceCount(bounceCount);
     }
 
 
+    /**
+     * Get the value of bounciness. The default value is 2.0F.
+     *
+     * @return
+     *         The value of bounciness.
+     */
     public float getBounciness()
     {
         return bounciness;
     }
 
 
+    /**
+     * Set the value of bounciness.
+     *
+     * @param bounciness
+     *
+     * @throws IllegalArgumentException
+     *         The given value is less than 1.
+     */
     public void setBounciness(float bounciness)
     {
         this.bounciness = checkBounciness(bounciness);

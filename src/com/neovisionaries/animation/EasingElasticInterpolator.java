@@ -39,24 +39,52 @@ public class EasingElasticInterpolator extends EasingInterpolator
     }
 
 
+    /**
+     * Get the count of oscillations. The default value is 3.
+     *
+     * @return
+     *         The count of oscillations.
+     */
     public int getOscillationCount()
     {
         return oscillationCount;
     }
 
 
+    /**
+     * Set the count of oscillations.
+     *
+     * @param oscillationCount
+     *
+     * @throws IllegalArgumentException
+     *         The given value is less than 0.
+     */
     public void setOscillationCount(int oscillationCount)
     {
         this.oscillationCount = checkOscillationCount(oscillationCount);
     }
 
 
+    /**
+     * Get the value of springiness. The default value is 3.0F.
+     *
+     * @return
+     *         The value of springiness.
+     */
     public float getSpringiness()
     {
         return springiness;
     }
 
 
+    /**
+     * Set the value of springiness.
+     *
+     * @param springiness
+     *
+     * @throws IllegalArgumentException
+     *         The given value is less than 0.
+     */
     public void setSpringiness(float springiness)
     {
         this.springiness = checkSpringiness(springiness);

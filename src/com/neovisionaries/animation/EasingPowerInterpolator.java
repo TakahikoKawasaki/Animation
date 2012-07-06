@@ -38,12 +38,26 @@ public class EasingPowerInterpolator extends EasingInterpolator
     }
 
 
+    /**
+     * Get the value of power. The default value is 2.0F.
+     *
+     * @return
+     *         The value of power.
+     */
     public float getPower()
     {
         return power;
     }
 
 
+    /**
+     * Set the value of power.
+     *
+     * @param power
+     *
+     * @throws IllegalArgumentException
+     *         The given value is less than 0.
+     */
     public void setPower(float power)
     {
         this.power = checkPower(power);

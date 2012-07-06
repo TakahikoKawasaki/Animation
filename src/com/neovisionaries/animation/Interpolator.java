@@ -44,9 +44,9 @@ public interface Interpolator
      *
      * <p>
      * For example, an {@link Interpolator} implementation that does
-     * linear interpolation will generate [3.0] based on the equation
-     * shown below when [2.0], [6.0] and 0.25 are given as from[], to[]
-     * and timeRatio.
+     * linear interpolation ({@link LinearInterpolator}) will generate
+     * [3.0] based on the equation shown below when [2.0], [6.0] and
+     * 0.25 are given as from[], to[] and timeRatio.
      * </p>
      *
      * <pre style="margin: 1em;">

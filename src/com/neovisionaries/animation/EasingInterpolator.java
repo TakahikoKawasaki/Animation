@@ -19,7 +19,7 @@ package com.neovisionaries.animation;
 /**
  * Base implementation of easing interpolators.
  *
- * @author Takahiko
+ * @author Takahiko Kawasaki
  */
 public abstract class EasingInterpolator extends InterpolatorBase
 {

@@ -38,12 +38,26 @@ public class EasingBackInterpolator extends EasingInterpolator
     }
 
 
+    /**
+     * Get the value of amplitute. The default value is 1.0F.
+     *
+     * @return
+     *         The value of amplitude.
+     */
     public float getAmplitude()
     {
         return amplitude;
     }
 
 
+    /**
+     * Set the value of amplitude.
+     *
+     * @param amplitude
+     *
+     * @throws IllegalArgumentException
+     *         The given value is less than 0.
+     */
     public void setAmplitude(float amplitude)
     {
         this.amplitude = checkAmplitude(amplitude);

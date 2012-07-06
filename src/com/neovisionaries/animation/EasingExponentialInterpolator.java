@@ -38,12 +38,23 @@ public class EasingExponentialInterpolator extends EasingInterpolator
     }
 
 
+    /**
+     * Get the value of exponent. The default value is 2.0F.
+     *
+     * @return
+     *         The value of exponent.
+     */
     public float getExponent()
     {
         return exponent;
     }
 
 
+    /**
+     * Set the value of exponent.
+     *
+     * @param exponent
+     */
     public void setExponent(float exponent)
     {
         this.exponent = exponent;
