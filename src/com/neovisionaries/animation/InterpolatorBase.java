@@ -47,12 +47,12 @@ public abstract class InterpolatorBase implements Interpolator
      * <li>'componentCount' is less than 1.</li>
      * <li>'output' is null.</li>
      * <li>The length of 'output' is less than 'componentCount'.</li>
-     * <li>'from' is null (this check is not done if 'timeRatio' is 0).</li>
+     * <li>'from' is null (this check is not done if 'timeRatio' is 1).</li>
      * <li>The length of 'from' is less than 'componentCount' 
-     *     (this check is not done if 'timeRatio' is 0).</li>
-     * <li>'to' is null (this check is not done if 'timeRatio' is 1).</li>
-     * <li>The length of 'to' is less than 'componentCount'
      *     (this check is not done if 'timeRatio' is 1).</li>
+     * <li>'to' is null (this check is not done if 'timeRatio' is 0).</li>
+     * <li>The length of 'to' is less than 'componentCount'
+     *     (this check is not done if 'timeRatio' is 0).</li>
      * </ul>
      */
     @Override
@@ -78,7 +78,7 @@ public abstract class InterpolatorBase implements Interpolator
             throw new IllegalArgumentException("output.length < size");
         }
 
-        if (timeRatio != 0)
+        if (timeRatio < 1)
         {
             if (from == null)
             {
@@ -90,7 +90,7 @@ public abstract class InterpolatorBase implements Interpolator
             }
         }
 
-        if (timeRatio != 1)
+        if (0 < timeRatio)
         {
             if (to == null)
             {
